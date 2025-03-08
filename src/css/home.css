@@ -511,6 +511,7 @@
         appearance: none; /* Remove default styling */
         background-color: white; /* Ensure background is white */
         cursor: pointer; /* Indicate it's clickable */
+        color: gray;
     }
 }
   
