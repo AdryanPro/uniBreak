@@ -4,8 +4,8 @@ import "../css/home.css"
 import emailjs from 'emailjs-com';
 import Lloret from "../assets/homePage/LloretCard.png"
 import Amsterdam from "../assets/homePage/amsterdamCard.png"
-import Salou from "../assets/homePage/salouCard.png"
-import Ski from "../assets/homePage/SkiCard.png"
+import Salou from "../assets/homePage/SalouCard.png"
+import Ski from "../assets/homePage/skiCard.png"
 
 
 export default function HomePage() {
