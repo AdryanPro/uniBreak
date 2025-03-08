@@ -503,7 +503,7 @@
     }
     /* Style the select element */
     .popupForm select {
-        font-size: 3rem; /* Reasonable font size for mobile */
+        font-size: 1rem; /* Reasonable font size for mobile */
         width: 100%; /* Full width */
         padding: 10px; /* Adequate padding for touch devices */
         border: 1px solid #ccc; /* Consistent border */
