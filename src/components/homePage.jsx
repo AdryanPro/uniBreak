@@ -187,7 +187,7 @@ export default function HomePage() {
                     <li>Jet ski, soirées privées, limousines… On vous mets bien avec des expériences de folie."</li>
                 </ul>
                 <ul>
-                    <li>Transport sans galèreNotre flotte = moins cher, plus sûr, plus flexible</li>
+                    <li>Transport sans galèreNotre flotte = moins cher, plus sûr, plus flexible <br /><br /></li>
                     <li>Expérience : À la base, on est transporteurs. On a travaillé avec des boîtes d’événementiel et des grands groupes de tourisme, ce qui nous a donné des années d’expérience et d’observation pour savoir ce qui marche vraiment</li>
                 </ul>
             </div>
