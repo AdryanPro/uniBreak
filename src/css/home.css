@@ -102,6 +102,43 @@
     align-items: center;
     font-size: 1.6rem;
 }
+.go:hover {
+ animation: shake3856 0.3s linear infinite both;
+ border: none;
+}
+
+@keyframes shake3856 {
+ 0% {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+ }
+
+ 20% {
+  -webkit-transform: translate(-2px, 2px);
+  transform: translate(-2px, 2px);
+ }
+
+ 40% {
+  -webkit-transform: translate(-2px, -2px);
+  transform: translate(-2px, -2px);
+ }
+
+ 60% {
+  -webkit-transform: translate(2px, 2px);
+  transform: translate(2px, 2px);
+ }
+
+ 80% {
+  -webkit-transform: translate(2px, -2px);
+  transform: translate(2px, -2px);
+ }
+
+ 100% {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+ }
+}
+
 .popupOverlay {
     position: fixed;
     top: 0;
