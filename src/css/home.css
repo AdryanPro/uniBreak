@@ -334,7 +334,6 @@
   /* Tablets (1024px width) */
 @media (max-width: 1024px) {
     body{
-        background-color: purple;
         padding: 0;
         margin: 0;
         min-width: 100vw;

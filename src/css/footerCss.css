@@ -1,0 +1,147 @@
+/* --- Footer Styling --- */
+.footer {
+    width: 100%;
+    max-width: 100vw; /* Prevents overflow */
+    background-color: #111; /* Dark theme */
+    color: white;
+    text-align: center;
+    padding: 4vh 2vw;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensures padding doesn't add extra width */
+    overflow-x: hidden;
+}
+
+/* Footer Content Section (Three Columns on Desktop) */
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Evenly distributes sections */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 2vh;
+    gap: 3vw;
+}
+
+/* Each Section in the Footer */
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1vh;
+    color: white;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5vh;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.footer-section ul li:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    width: 100%;
+    max-width: 100vw; /* Ensures no horizontal scrolling */
+    display: flex;
+    justify-content: center; /* Center everything */
+    align-items: center;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    padding-top: 2vh;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0 auto; /* Centers the footer content */
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Copyright Text centered */
+.footer-bottom .copyright {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* "Dev by Adryan" positioned on the far right */
+.dev-signature {
+    margin-left: auto; /* Pushes it to the right */
+    font-style: italic;
+    opacity: 0.6;
+    white-space: nowrap; /* Prevents text from wrapping awkwardly */
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 4vh 4vw; /* Adjust padding for smaller screens */
+    }
+
+    /* Stack sections on mobile */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        min-width: unset;
+    }
+
+    /* Center all elements on mobile */
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1vh;
+        position: static;
+    }
+
+    .copyright {
+        order: 1;
+        width: 100%;
+        text-align: center;
+        position: static;
+        transform: none;
+    }
+
+    .dev-signature {
+        order: 2;
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+}
+/* Rainbow Effect for "Dev by Adryan" */
+@keyframes rainbow {
+    0% { color: red; }
+    16% { color: orange; }
+    32% { color: yellow; }
+    48% { color: limegreen; }
+    64% { color: cyan; }
+    80% { color: rgb(40, 40, 232); }
+    100% { color: violet; }
+}
+
+.dev-signature {
+    margin-left: auto; /* Pushes to the right */
+    font-style: italic;
+    font-weight: bold;
+    white-space: nowrap; /* Prevents wrapping */
+    animation: rainbow 6s linear infinite; /* Smooth infinite loop */
+    transition: color 0.5s ease-in-out; /* Smooth transition */
+}
